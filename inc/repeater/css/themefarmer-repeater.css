@@ -1,0 +1,145 @@
+.themefarmer-repeater-item {
+    background-color: #FFF;
+    border: 1px solid #cfd0d2;
+    border-radius: 3px;
+}
+
+li.themefarmer-repeater-item.ui-sortable-placeholder {
+    border: 1px dashed #797878;
+    height: 50px;
+    visibility:visible !important;
+    background:transparent;
+}
+
+.repeater-head {
+    padding: 15px 10px;
+    border-bottom: 1px solid #aaa;
+    cursor: move;
+    font-weight: bolder;
+    padding: 15px;
+    font-size: 1em;
+    line-height: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;
+}
+
+.repeater-head .dashicons-menu {
+    margin-right: 10px;
+}
+
+
+.repeater-head .dashicons-arrow-right {
+    float: right;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.repeater-expanded .repeater-head .dashicons-arrow-right {
+    transform: rotate(90deg);
+}
+
+.repeater-body {
+    padding: 20px 10px;
+}
+
+.repeater-element {
+    margin-bottom: 15px;
+}
+
+.repeater-element>label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.themefarmer-repeater-contaier>.repeater-body {
+    display: none;
+}
+
+.themefarmer-repeater-contaier.repeater-expanded >.repeater-body {
+    display: block !important;
+}
+
+/*.themefarmer-repeater-contaier.repeater-expanded > .repeater-body {
+			    display: block;
+			}*/
+
+.repeater-element textarea,
+.repeater-element input,
+.repeater-element select {
+    width: 100%;
+}
+
+.repeater-element textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.cimage-select-button {
+    margin-top: 5px !important;
+}
+
+.icon-show {
+    width: 27px;
+    height: 22px;
+    font-size: 21px;
+    text-align: center;
+    padding: 3px 0;
+    border: 1px solid #8c8c8c;
+    border-radius: 2px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+input.widefat.icon-select-field {
+    padding: 5px 0 5px 40px;
+}
+
+.themefarmer-repeater-add-new {
+    float: right;
+    clear: both;
+}
+
+.themefarmer-repeater-repeater-element .icon-show {
+    border: none;
+    font-size: 15px;
+    padding: 0;
+    padding-top: 5px;
+}
+
+
+.themefarmer-repeater-repeater {
+    padding: 10px;
+}
+
+.themefarmer-repeater-repeater-group {
+    margin-bottom: 20px;
+}
+
+.themefarmer-repeater-repeater-element {
+    margin-bottom: 5px;
+}
+
+.themefarmer-repeater-add-repeater {
+    float: right;
+}
+
+.tf-remove-button {
+    background: none;
+    border: none;
+    color: #dc3232;
+    cursor: pointer;
+    padding: 0;
+}
+
+.themefarmer-responsive-slide-images-control {
+    display: none;
+}
+
+.themefarmer-responsive-slide-images-control.active{
+    display: block;
+}

@@ -1,0 +1,26 @@
+.themefarmer-sortable-item {
+    background-color: #FFF;
+    padding: 6px 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.themefarmer-sortable-item.ui-sortable-placeholder {
+    border: 1px dashed #797878 !important;
+    height: 20px;
+}
+
+
+.themefarmer-sortable-item .dashicons-visibility {
+    float: right;
+    display: block;
+}
+
+.themefarmer-sortable-item .dashicons-menu {
+    margin-right: 10px;
+}
+
+.themefarmer-sortable-item.invisible {
+    color: #aaa;
+    border: 1px dashed #aaa;
+}
