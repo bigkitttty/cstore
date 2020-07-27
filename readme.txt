@@ -1,4 +1,4 @@
-=== StoreOne ===
+=== cstore===
 Contributors: csore
 Tested up to:5.2.2
 Stable tag: trunk
