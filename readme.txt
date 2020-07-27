@@ -1,5 +1,5 @@
 === StoreOne ===
-Contributors: ThemeFarmer
+Contributors: csore
 Tested up to:5.2.2
 Stable tag: trunk
 Requires at least:4.0
