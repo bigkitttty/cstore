@@ -1,0 +1,20 @@
+/* Control - Section */
+[id*="thinkup_customizer_section"] li.customize-control-section {
+	padding: 0 !important;
+	border: none !important;
+}
+[id*="thinkup_customizer_section"] li.customize-control-section .customize-section-description,
+[id*="thinkup_customizer_section"] li.customize-control-section .customize-control-title {
+	height: 50px;
+	line-height: 50px;
+}
+[id*="thinkup_customizer_section"] li.customize-control-section .customize-section-description {
+	padding: 0 10px;
+	background-color: #EFF9FF;
+	border: 1px solid #D6F0FF;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}

@@ -1,0 +1,405 @@
+/*
+0. General Styling
+1. Upgrade Now Box
+2. Getting Started
+3. Support
+4. Free VS Pro
+5. Responsive
+6. Misc
+*/
+
+/* ----------------------------------------------------------------------------------------------------------
+	0. GENERAL
+---------------------------------------------------------------------------------------------------------- */
+
+/* Hide defauly dismiss button */
+.thinkup-toolbox-about a.notice-dismiss {
+	padding: 10px !important;
+	text-decoration: none !important;
+}
+.thinkup-toolbox-about button.notice-dismiss {
+	display: none !important;
+}
+
+/* Position about text away from upgrade box */
+.appearance_page_thinkup-welcome .about-wrap h1,
+.appearance_page_thinkup-welcome .about-wrap .about-text {
+	margin-right: 340px;
+}
+.appearance_page_thinkup-welcome .about-wrap .about-text {
+	margin-bottom: 30px;
+}
+.appearance_page_thinkup-welcome .thinkup-toolbox-about {
+	display: none !important;
+}
+
+/* proper positioning of the icons */
+.epsilon-wrap i.dashicons {
+	margin-right: 15px;
+	position: relative;
+	top: 6px;
+}
+
+/* Position feature sections correctly */
+.about-wrap .feature-section {
+	padding: 30px 0 0;
+}
+
+.about-wrap .feature-section .col {
+	margin-top: 0;
+	margin-bottom: 5%;
+}
+.about-wrap .feature-section .col p {
+	font-size: 14px;
+}
+.about-wrap .feature-section .col:nth-child(3n + 1) {
+	clear:both;
+}
+
+.about-wrap .feature-section.three-col {
+	margin: auto;
+	max-width: 1020px;
+}
+.feature-section.three-col:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.about-wrap .feature-section.three-col .col {
+	width: 31.6%;
+	margin-right: 2.6%;
+	margin-bottom: 20px;
+	position: relative;
+	float: left;
+}
+.about-wrap .feature-section.three-col .col:last-child {
+	clear: right;
+	margin-right: 0px !important;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------
+	1. UPGRADE NOW BOX
+---------------------------------------------------------------------------------------------------------- */
+
+/* Promotional table */
+#promotion-table {
+	background: #fff;
+	margin-bottom: 40px;
+	border: 1px solid #DDD;
+	padding: 17px 10px 20px;
+	width: 300px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#promotion-header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+#promotion-header,
+#promotion-coupon {
+}
+
+/* Upgrade button and coupon section */
+#thinkup-promotion-field-header {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-bottom: 40px;
+}
+#thinkup-promotion-field-header .main-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 0 20px;
+	line-height: 1;
+	text-align: center;
+}
+
+/* Upgrade Now button */
+#promotion-header .button.button-primary {
+	line-height: 44px;
+	text-transform: uppercase;
+	width: 190px;
+	height: 44px;
+	padding: 0;
+}
+
+/* Coupon styling */
+#promotion-coupon a {
+	background: #F3F3F3;
+	font-size: 22px;
+	margin-bottom: 20px;
+	line-height: 1;
+	color: inherit;
+	text-decoration: none;
+	width: 220px;
+	padding: 10px 10px 15px;
+	text-align: center;
+	border: 2px dashed #CCC;
+	margin: 0 auto 0;
+	display: block;
+}
+#promotion-coupon span {
+	font-size: 12px;
+	display: block;
+	margin-top: 10px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------
+	2. GETTING STARTED
+---------------------------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------------------------------------------
+	3. SUPPORT
+---------------------------------------------------------------------------------------------------------- */
+
+#thinkup-support-content > .col:nth-child(3) {
+background: #fff;
+    border: 1px solid #ddd;
+    padding: 0 20px 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ #thinkup-support-content > .col:nth-child(3) > h3 {
+	margin-top: 16px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------
+	4. FREE VS PRO
+---------------------------------------------------------------------------------------------------------- */
+
+#free_pro .free-pro-table {
+	border-spacing: 0;
+	width: 100%;
+}
+
+#free_pro .free-pro-table th {
+	padding-bottom: 20px;
+}
+
+#free_pro .free-pro-table td {
+	border-top: 1px solid #ccc;
+	padding: 20px 0 25px;
+}
+
+#free_pro .free-pro-table h3{
+	margin: 0;
+}
+
+#free_pro .free-pro-table td p {
+	margin: 0;
+}
+
+#free_pro .free-pro-table .only-lite,
+#free_pro .free-pro-table .only-pro {
+	font-weight: 600;
+	text-align: center;
+	width: 15%;
+}
+
+#free_pro .free-pro-table .only-lite .dashicons-before:before {
+	color: #00A878;
+}
+
+#free_pro .free-pro-table .only-pro .dashicons-before:before {
+	color: #ff3439;
+}
+
+#free_pro .free-pro-table .only-lite .dashicons-before:before,
+#free_pro .free-pro-table .only-pro .dashicons-before:before {
+	font-size: 35px;
+	height: 35px;
+	width: 35px;
+}
+
+#free_pro .thinkup-free-pro-button {
+	text-align: right;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------
+	5. RESPONSIVE
+---------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1140px) {
+}
+@media only screen and (max-width: 960px) {
+}
+@media only screen and (max-width: 768px) {
+	.appearance_page_thinkup-welcome .about-wrap h1,
+	.appearance_page_thinkup-welcome .about-wrap .about-text {
+		margin-right: 0;
+	}	
+	#thinkup-promotion-field-header {
+		position: static;
+	}
+	#promotion-table {
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 685px) {
+}
+@media only screen and (max-width: 667px) {
+
+	/* Position feature sections correctly */
+	.about-wrap .feature-section.three-col .col {
+		width: 100% !important;
+		float: none !important;
+		margin-right: 0px !important;
+	}
+}
+@media only screen and (max-width: 568px) {
+}
+@media only screen and (max-width: 320px) {
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------
+	5. MISC
+---------------------------------------------------------------------------------------------------------- */
+
+.one_half     {width: 48.7%; }
+.one_third    {width: 31.6%; }
+.two_third    {width: 65.8%; }
+.one_fourth   {width: 23.05%; }
+.three_fourth {width: 74.35%; }
+.one_fifth    {width: 17.92%; }
+.two_fifth    {width: 38.44%; }
+.three_fifth  {width: 58.96%; }
+.four_fifth   {width: 79.48%; }
+.one_sixth    {width: 14.5%; }
+.five_sixth   {width: 82.9%; }
+.last         {clear: right; margin-right: 0px !important; }
+
+.one_half,
+.one_third,
+.two_third,
+.one_fourth,
+.three_fourth,
+.one_fifth,
+.two_fifth,
+.three_fifth,
+.four_fifth,
+.one_sixth,
+.five_sixth {
+	margin-right: 2.6%;
+	margin-bottom: 20px;
+	position: relative;
+	float: left;
+}
+#thinkup-documentation,
+#thinkup-documentation .thinkup-documentation-info,
+#thinkup-documentation .menu-item {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+#thinkup-documentation ul {
+	font-size: 14px;
+	list-style: disc;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+#thinkup-documentation .thinkup-documentation-info {
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 19px 15px 20px;
+	margin: 0 0 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#thinkup-documentation .thinkup-documentation-info h3 {
+	font-size: 15px;
+	margin: 0 0 15px;
+}
+#thinkup-documentation .thinkup-documentation-info p {
+	margin-bottom: 15px !important;
+}
+#thinkup-documentation .thinkup-documentation-info p:last-child {
+	margin-bottom: 0 !important;
+}
+#thinkup-documentation .menu-item-handle,
+#thinkup-documentation .menu-item-settings,
+#thinkup-documentation.feature-section p {
+	width: 100% !important;
+	max-width: 100% !important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#thinkup-documentation .menu-item-settings {
+	display: none;
+	padding: 15px;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	-ms-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	-o-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+#thinkup-documentation .menu-item-main.two_third {
+	padding: 20px 20px 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#thinkup-documentation .menu-item-main.menu-item-main-hasside {
+	border-right: 1px solid #ddd;
+}
+#thinkup-documentation .menu-item-main,
+#thinkup-documentation .menu-item-side {
+	padding-top: 20px;
+	margin-top: 15px;
+}
+#thinkup-documentation.feature-section p {
+	font-size: 14px;
+	margin: 0 0 20px;
+}
+#thinkup-documentation.feature-section p:last-child {
+}
+#thinkup-documentation .menu-item-handle {
+	cursor: pointer;
+}
+#thinkup-documentation .menu-item .item-title:before {
+	position: absolute;
+	right: 10px;
+	top: 9px;
+	border: none;
+	background: 0 0;
+	font: 400 20px/1 dashicons;
+	speak: none;
+	display: block;
+	padding: 0;
+	text-indent: 0;
+	text-align: center;
+	/* position: relative; */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none!important;
+}
+#thinkup-documentation .menu-item-edit-active .item-title:before {
+	content: "\f142";
+}
+#thinkup-documentation .menu-item-edit-inactive .item-title:before {
+	content: "\f140";
+}
+
+

@@ -1,0 +1,29 @@
+/* Control - Radio Image */
+[id*="thinkup_customizer_section"] li.customize-control-radio-image input[type="radio"] {
+	display: none;
+}
+[id*="thinkup_customizer_section"] li.customize-control-radio-image label,
+[id*="thinkup_customizer_section"] li.customize-control-radio-image input,
+[id*="thinkup_customizer_section"] li.customize-control-radio-image img {
+	outline: none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-o-box-shadow: none !important;
+	box-shadow: none !important;
+}
+[id*="thinkup_customizer_section"] li.customize-control-radio-image label {
+	display: inline-block;
+}
+[id*="thinkup_customizer_section"] li.customize-control-radio-image img {
+	width: 100%;
+	height: auto;
+	border: 4px solid #d9d9d9;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+[id*="thinkup_customizer_section"] li.customize-control-radio-image input:checked + img {
+	border-color: #0073aa;
+}

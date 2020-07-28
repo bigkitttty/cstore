@@ -1,0 +1,148 @@
+/*  TABLE OF CONTENTS
+01. GENERAL
+02. SECTIONS
+03. CONTROLS
+04. MISC
+*/
+
+/* ----------------------------------------------------------------------------
+	01.	GENERAL
+---------------------------------------------------------------------------- */
+
+#customize-info,
+#customize-controls .customize-info,
+#accordion-section-themes+.control-section,
+#customize-theme-controls .control-panel-content .control-section,
+#customize-theme-controls #accordion-section-themes > h3 {
+	margin: 0 !important;
+	border-top: 0 !important;
+}
+[id*="thinkup_customizer_section"] .customize-section-description-container {
+	margin-bottom: 0;
+}
+[id*="thinkup_customizer_section"] li.customize-control {
+	border-bottom: 1px solid #ddd;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	margin-bottom: 0 !important;
+}
+[id*="thinkup_customizer_section"] li.customize-control .customize-control-title {
+	font-size: 13px !important;
+	font-weight: bold;
+}
+[id*="thinkup_customizer_section"] li.customize-control .customize-control-description {
+	font-style: normal !important;
+	margin-bottom: 10px;
+}
+[id*="thinkup_customizer_section"] li.customize-control-checkbox .customize-control-description {
+	margin: 0;
+}
+[id*="thinkup_customizer_section"].accordion-section-content,
+[id*="thinkup_customizer_section"] .accordion-section-content {
+	background: #FCFCFC !important;
+}
+
+/* Add icon to "Theme Options" tab */
+#customize-controls [id*="thinkup_customizer_section_themeoptions"] > h3:before {
+	content: '\f0ad';
+	font-family: fontawesome;
+	padding-right: 5px
+}
+
+/* Change "Save & Publish" button color to be grey */
+.wp-core-ui #customize-header-actions .button-primary {
+    color: #555 !important;
+	text-shadow: none !important;
+    border-color: #ccc !important;
+    background: #f7f7f7 !important;
+    -webkit-box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08) !important;
+    box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08) !important;
+    vertical-align: top !important;	
+}
+.wp-core-ui #customize-header-actions .button-primary.focus,
+.wp-core-ui #customize-header-actions .button-primary.hover,
+.wp-core-ui #customize-header-actions .button-primary:focus,
+.wp-core-ui #customize-header-actions .button-primary:hover {
+    background: #fafafa !important;
+    border-color: #999 !important;
+    color: #23282d !important;
+}
+.wp-core-ui #customize-header-actions .button-primary.active,
+.wp-core-ui #customize-header-actions .button-primary.active:focus,
+.wp-core-ui #customize-header-actions .button-primary.active:hover,
+.wp-core-ui #customize-header-actions .button-primary:active {
+    background: #eee !important;
+    border-color: #999 !important;
+    color: #32373c !important;
+    -webkit-box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5) !important;
+    box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5) !important;
+}
+.wp-core-ui #customize-header-actions .button-primary-disabled,
+.wp-core-ui #customize-header-actions .button-primary.disabled,
+.wp-core-ui #customize-header-actions .button-primary:disabled,
+.wp-core-ui #customize-header-actions .button-primary[disabled] {
+    opacity: 0.6;
+    color: #555 !important;
+    border-color: #ccc !important;
+    background: #f7f7f7 !important;
+    -webkit-box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08) !important;
+    box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08) !important;
+    vertical-align: top !important;	
+}
+
+
+/* ----------------------------------------------------------------------------
+	02. SECTIONS
+---------------------------------------------------------------------------- */
+
+/* Section - Social Media */
+[id*="thinkup_customizer_section_socialmedia"] li[id$="link"],
+[id*="thinkup_customizer_section_socialmedia"] li[id$="iconswitch"] {
+	border-bottom: none !important;
+	padding-bottom: 5px !important;
+}
+
+/* Section - Homepage (Featured) */
+[id*="thinkup_customizer_section_homepagefeatured"] li[id$="_image"],
+[id*="thinkup_customizer_section_homepagefeatured"] li[id$="_icon"],
+[id*="thinkup_customizer_section_homepagefeatured"] li[id$="_title"],
+[id*="thinkup_customizer_section_homepagefeatured"] li[id$="_desc"] {
+	border-bottom: none !important;	
+	padding-bottom: 5px !important;
+}
+
+
+/* ----------------------------------------------------------------------------
+	03. CONTROLS
+---------------------------------------------------------------------------- */
+
+/* Control - Checkbox */
+.customize-control-checkbox label {
+	margin: 0;
+	font-weight: bold;
+	position: relative;
+}
+.customize-control-checkbox .customize-control-description {
+	font-weight: normal;
+	margin: 10px 0 0 36px;
+}
+.customize-control-checkbox label input[type=checkbox] {
+	position: absolute;
+	left: 0;
+	top: 38px;
+	margin: 0;
+}
+
+/* Control - Select */
+[id*="thinkup_customizer_section"] li.customize-control select,
+[id*="thinkup_customizer_section"] li.customize-control input[type=text],
+[id*="thinkup_customizer_section"] li.customize-control .attachment-media-view {
+	width: 100%;
+	max-width: 280px;
+}
+
+
+/* ----------------------------------------------------------------------------
+	04. MISC
+---------------------------------------------------------------------------- */
+

@@ -1,0 +1,123 @@
+/* Slider toggle buttons */
+#customize-control-thinkup_homepage_sliderswitch label input {
+	display: none;
+}
+#customize-control-thinkup_homepage_sliderswitch label {
+	border-radius: 4px;
+	cursor: pointer;
+	display: inline-block;
+	background-color: #e6e6e6;
+	background-repeat: no-repeat;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), color-stop(25%, #fff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(#fff, #fff 25%, #e6e6e6);
+	background-image: -moz-linear-gradient(top, #fff, #fff 25%, #e6e6e6);
+	background-image: -ms-linear-gradient(#fff, #fff 25%, #e6e6e6);
+	background-image: -o-linear-gradient(#fff, #fff 25%, #e6e6e6);
+	background-image: linear-gradient(#fff, #fff 25%, #e6e6e6);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+	padding: 5px 14px 6px;
+	margin: 0;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+	color: #333;
+	font-size: 13px;
+	line-height: normal;
+	border: 1px solid #ccc;
+	border-bottom-color: #bbb;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+	-webkit-transition: 0.1s linear background-image;
+	-moz-transition: 0.1s linear background-image;
+	-ms-transition: 0.1s linear background-image;
+	-o-transition: 0.1s linear background-image;
+	transition: 0.1s linear background-image;
+	overflow: visible;
+}
+#customize-control-thinkup_homepage_sliderswitch label.checked {
+	color: #fff;
+	background-repeat: repeat-x;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #0073aa !important;
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#008bce), to(#0073aa)) !important;
+	background-image: -moz-linear-gradient(top, #008bce, #0073aa) !important;
+	background-image: -ms-linear-gradient(top, #008bce, #0073aa) !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #008bce), color-stop(100%, #0073aa)) !important;
+	background-image: -webkit-linear-gradient(top, #008bce, #0073aa) !important;
+	background-image: -o-linear-gradient(top, #008bce, #0073aa) !important;
+	background-image: -linear-gradient(top, #008bce, #0073aa) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008bce', endColorstr='#0073aa', GradientType=0) !important;
+	border-color: #003f5d !important;
+	border-color: #005077 !important;
+	-webkit-box-shadow: inset 0 1px 0 #00a7f6,0 1px 0 rgba(0,0,0,0.15) !important;
+	box-shadow: inset 0 1px 0 #00a7f6,0 1px 0 rgba(0,0,0,0.15) !important;
+}
+
+/* Slider control */
+#customize-control-thinkup_homepage_sliderimage1_info,
+#customize-control-thinkup_homepage_sliderimage2_info,
+#customize-control-thinkup_homepage_sliderimage3_info {
+	cursor: pointer;
+	background: #f4f4f4;
+	border: 1px solid #ddd;
+	padding: 10px;
+	margin-top: 20px;
+	text-align: center;
+	font-weight: 600;
+	text-transform: uppercase;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#customize-control-thinkup_homepage_sliderimage1_info:after,
+#customize-control-thinkup_homepage_sliderimage2_info:after,
+#customize-control-thinkup_homepage_sliderimage3_info:after {
+	font-family: fontawesome;
+	content: "\f107";
+	padding: 10px;
+}
+#customize-control-thinkup_homepage_sliderimage1_info.sliderimage_open:after,
+#customize-control-thinkup_homepage_sliderimage2_info.sliderimage_open:after,
+#customize-control-thinkup_homepage_sliderimage3_info.sliderimage_open:after {
+	content: "\f106";
+}
+#customize-control-thinkup_homepage_sliderimage1_image,
+#customize-control-thinkup_homepage_sliderimage1_title,
+#customize-control-thinkup_homepage_sliderimage1_desc,
+#customize-control-thinkup_homepage_sliderimage1_link,
+#customize-control-thinkup_homepage_sliderimage2_image,
+#customize-control-thinkup_homepage_sliderimage2_title,
+#customize-control-thinkup_homepage_sliderimage2_desc,
+#customize-control-thinkup_homepage_sliderimage2_link,
+#customize-control-thinkup_homepage_sliderimage3_image,
+#customize-control-thinkup_homepage_sliderimage3_title,
+#customize-control-thinkup_homepage_sliderimage3_desc,
+#customize-control-thinkup_homepage_sliderimage3_link {
+	display: none;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-bottom: 1px dotted #ddd;
+	border-top: none;
+	padding: 15px 20px 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#customize-control-thinkup_homepage_sliderimage1_link,
+#customize-control-thinkup_homepage_sliderimage2_link,
+#customize-control-thinkup_homepage_sliderimage3_link {
+	border-bottom: 1px solid #ddd;
+}
+#customize-control-thinkup_homepage_sliderpresetheight {
+	border-top: 1px solid #ddd;
+	margin-top: 20px;
+}
+#customize-control-thinkup_homepage_sliderpresetwidth {
+	border-top: 1px solid #ddd;
+	border-bottom: none;
+	margin-top: 20px;
+	padding-bottom: 0;
+}
