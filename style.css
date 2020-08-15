@@ -1,23 +1,30 @@
-/*
-Theme Name: cstore
-Author: hiss crate
-Author URI: https://hiss-crate.com/
-Theme URI: https://themefarmer.com/free-themes/storeone/
-Description: cstore is Powerful multipurpose WooCommerce WordPress Theme. ctoreis the perfect free theme for e-commerce shop. cstore is responsive mobile optimized and using bootstrap framework. to show awesome icons on site it's using FontAwesome icons. cstore is Search Engine Optimized (SEO) friendly. Theme is developed to be used for any business, corporate, companies, or freelancers to create an awesome online presence. StoreOne is highly recommended for business, informative, agencies, travel, design, art, personal, restaurant, construction, health, digital agency, bloggers, corporate business, freelancers, portfolio, product showcase, and any other creative e-commerce websites. Even with all the Powerful features the theme is optimized for fast performance and security.Theme includes customizable homepage, awesome slider, social links, latest products, latest blog section and other Advance section. Theme Provide 3 page Template (Home Page , Full Width, Left Sidebar) to select layout. StoreOne is perfect suitable for clothing, electronics, mobile and almost any type of store website. StoreOne is good for eCommerce solution and compatible with contact form 7, JetPack, WPML, Elementor page builder.
-Version: 2.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: storeone
-Tags: e-commerce, portfolio, blog, custom-logo, custom-header, custom-menu, featured-images, full-width-template, right-sidebar, left-sidebar, sticky-post, theme-options, threaded-comments, translation-ready, one-column, two-columns
+* Theme Name: 		   cstore
+* Text Domain: 	   cstore
+* Version:            1.8.6
+* Tested up to:       5.4.2
+* Requires at least:  5.3
+* Requires PHP:      4.2.3
+* Author:             hiss-crate
+* Description:        cstore is Powerful multipurpose WooCommerce WordPress Theme. cStore is the perfect free theme for e-commerce shop. cstore is responsive mobile optimized and using bootstrap framework. to show awesome icons on site it's using FontAwesome icons. cstore is Search Engine Optimized (SEO) friendly. Theme is developed to be used for any business, corpo…
 
 
-StoreOne is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
+* Tags:               two-columns, right-sidebar, footer-widgets, blog, news, custom-background, custom-menu, post-formats, rtl-language-support, sticky-post, editor-style, threaded-comments, translation-ready, buddypress, custom-colors, featured-images, full-width-template, theme-options, e-commerce
+*
+* License: GNU General Public License v2.0 or later
+* License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*
+* All files, unless otherwise stated, are released under the GNU General Public
+* License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
 
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+* This theme, like WordPress, is licensed under the GPL.
+* Use it to make something cool, have fun, and share what you've learned
+* with others.
+*
+* DO NOT ADD YOUR CSS TO THIS FILE - IT WILL BE LOST
+* To add your own CSS, use a child theme: https://github.com/oceanwp/oceanwp-child-theme
+*
+* CSS file is in "assets/css"
 */
-
 
 /* All */
 

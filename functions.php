@@ -1,69 +1,32 @@
-<?php
+?php
 /**
- * Kadence functions and definitions
- *
- * This file must be parseable by PHP 5.2.
+ * ClassicPress TwentySixteen functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package kadence
+ * @package ClassicPress
+ * @subpackage ClassicPress_cstore
+ * @since 1.0.0
  */
 
-define( 'KADENCE_VERSION', '0.7.15' );
-define( 'KADENCE_MINIMUM_WP_VERSION', '5.2' );
-define( 'KADENCE_MINIMUM_PHP_VERSION', '7.0' );
 
-// Bail if requirements are not met.
-if ( version_compare( $GLOBALS['wp_version'], KADENCE_MINIMUM_WP_VERSION, '<' ) || version_compare( phpversion(), KADENCE_MINIMUM_PHP_VERSION, '<' ) ) {
-	require get_template_directory() . '/inc/back-compat.php';
-	return;
-}
-/**
- * For now make sure Gutenberg plugin is active else present a warning.
- */
-function kadence_theme_is_gutenberg_active() {
-	$gutenberg = false;
-	$wpversion = false;
-	if ( version_compare( (float) $GLOBALS['wp_version'], 5.4, '>=' ) ) {
-		$wpversion = true;
-	}
-	if ( defined( 'GUTENBERG_VERSION' ) ) {
-		if ( version_compare( GUTENBERG_VERSION, 7.6, '>=' ) ) {
-			$gutenberg = true;
-		}
-	}
+add_action( 'after_setup_theme', 'cpcstore_setup' );
 
-	if ( ! $gutenberg && ! $wpversion ) {
-		add_action( 'admin_notices', 'kadence_theme_update_gutenberg_notice' );
-	}
-}
-add_action( 'admin_init', 'kadence_theme_is_gutenberg_active' );
-/**
- * For now add a warning about needing to install Gutenberg Plugin
- */
-function kadence_theme_update_gutenberg_notice() {
-	?>
-	<div class="updated error">
-		<h3 class="kt-notice-title"><?php echo esc_html__( 'Thanks for choosing the Kadence Theme', 'kadence' ); ?></h3>
-		<p class="kt-notice-description"><?php echo esc_html__( 'This theme relies on the latest code from the WordPress Block Editor, please update WordPress to 5.4 to make sure all the features work.', 'kadence' ); ?></p>
-	</div>
-	<?php
+function cpctore_setup() {
+	load_theme_textdomain( 'classicpress-twentysixteen' );
 }
 
-// Include WordPress shims.
-require get_template_directory() . '/inc/wordpress-shims.php';
+// Enqueue parent/child themes styles with cachebusting for child theme styles built in
+add_action( 'wp_enqueue_scripts', 'cp2016_enqueue_styles' );
 
-// Load the `kadence()` entry point function.
-require get_template_directory() . '/inc/class-theme.php';
-
-// Load the `kadence()` entry point function.
-require get_template_directory() . '/inc/functions.php';
-
-// Initialize the theme.
-call_user_func( 'Kadence\kadence' );
-
-require 'theme_update_check.php';
-$kadence_theme_updater = new ThemeUpdateChecker(
-	'kadence',
-	'https://kernl.us/api/v1/theme-updates/5e6bc9ee9c7bfc366d501241/'
-);
+function cpcstore_enqueue_styles() {
+	$parent_style = 'twentysixteen-style';
+	wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
+	
+	wp_enqueue_style(
+		'classicpress-twentysixteen',
+		get_stylesheet_directory_uri() . '/style.css',
+		array( $parent_style ),
+		classicpress_asset_version( 'style', 'classicpress-cpcstore_enqueue_styles' )
+	);
+}
